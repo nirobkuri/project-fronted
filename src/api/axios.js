@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const API = axios.create({
-  baseURL: "https://project-backend-one-sigma.vercel.app/api",
+  baseURL: import.meta.env.VITE_BASE_URL,
 })
 
 // Attach token to every request if available
